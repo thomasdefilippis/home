@@ -7,7 +7,6 @@ const useStyles = makeStyles(() => ({
 
     buttonStyles:{
         fontSize: '20px',
-        border: 'solid 2px black',
         borderRadius: '50%',
         backgroundColor: 'black',
         color: 'rgb(228, 130, 74)',
@@ -22,8 +21,8 @@ const useStyles = makeStyles(() => ({
 
 
     line:{
-        height: '20px',
-        borderLeft: '3px solid black',
+        height: '25px',
+        borderLeft: '6px solid black',
         width: '5px',
         marginLeft: '98px',
         transform: 'skewY(20deg)'

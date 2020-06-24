@@ -9,6 +9,9 @@ import ProjectData from './ProjectData';
 const useStyles = makeStyles((theme) => ({
     typographyStyles:{
         color: 'white',
+    },
+    projectContainer:{
+        textAlign: 'center'
     }
     
 }))

@@ -12,13 +12,13 @@ import ModalImage from './ModalImage';
 
 const useStyles = (theme) =>({
   root: {
-    maxWidth: '345px',
+    maxWidth: '340px',
     backgroundColor: 'black',
     opacity: '0.9',
     border: 'solid 3px rgb(228, 130, 74)',
     height: 'auto',
     margin: '0 auto',
-    padding: '5px',
+    padding: '1px',
     '&:hover': {
         borderRadius: '3%',
         opacity: '1'
@@ -27,21 +27,13 @@ const useStyles = (theme) =>({
     
   },
 
-  imageContainer:{
-    overflow: 'hidden'
-  },
-
-  img:{
-    transition: 'transform .5s ease',
-    '&:hover':{
-      transform: 'scale(1.5)',
-    }
-  },
+ 
 
   typographyStyles:{
       color: 'rgb(228, 130, 74)',
       marginTop: '30px',
       fontSize: '17px',
+      textAlign: 'left',
       wordWrap: 'break-word'
   },
 
@@ -65,7 +57,6 @@ const useStyles = (theme) =>({
 
   links:{
       color: "#567CAA",
-      paddingBottom: '30px',
       fontSize: '15px',
       "&:hover": {
           textDecoration: 'underline',
@@ -81,12 +72,11 @@ const useStyles = (theme) =>({
   },
 
   sourceLink:{
+    paddingBottom:'12px',
     textDecoration: 'none'
   },
 
-  builtWith: {
-    fontSize: '20px',
-  },
+  
 
 });
 
@@ -142,7 +132,7 @@ class ProjectCard extends React.Component {
 
             component='img'
             alt='image supposed to be here'
-            height="300"
+            height="250"
             image= {imageUrl}
             title='click to enlarge.'
             onClick={this.handleImageClick}

@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     codingChallenges:{
-        marginTop: '100px'
+        marginTop: '30px'
     },
 
     projectContainer:{

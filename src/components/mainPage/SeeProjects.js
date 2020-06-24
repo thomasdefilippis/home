@@ -10,13 +10,13 @@ const useStyles = makeStyles((theme) => ({
         width: '200px',
         height: 'auto',
         left: "-15px",
-        top: '20px',
+        top: '0px',
         margin: '0 auto',
         textAlign: 'center',
     },
 
     buttonStyles:{
-        fontSize: '20px',
+        fontSize: '18px',
         border: 'solid 2px black',
         borderRadius: '50%',
         backgroundColor: 'black',
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
     line:{
         height: '20px',
-        borderLeft: '3px solid black',
+        borderLeft: '6px solid black',
         width: '5px',
         marginLeft: '98px',
 

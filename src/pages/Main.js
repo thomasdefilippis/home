@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   projects:{
     paddingTop: '0px',
     paddingBottom: '100px',
-    marginTop: '20px'
+    marginTop: '30px'
   },
 
   example:{
@@ -44,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     width: '100%',
     height: '1000px',
-    paddingTop: '100px',
+    marginTop: '5px',
+    paddingTop: '60px',
     marginBottom: '200px'
   },
 
