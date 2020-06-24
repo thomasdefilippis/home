@@ -23,7 +23,7 @@ const useStyles = (theme) => ({
     },
 
     typographyStyles:{
-        marginBottom: '50px'
+        marginBottom: '100px'
     },
 
     header:{
@@ -33,7 +33,7 @@ const useStyles = (theme) => ({
 
     description: {
         backgroundColor: 'black',
-        width: '90%',
+        width: 'auto',
         height: 'auto',
         marginTop: '90px',
         paddingLeft: '50px',

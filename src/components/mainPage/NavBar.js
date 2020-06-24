@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         boxShadow: "none",
         backgroundColor: "#000000",
-        height: '70px',
+        height: 'auto',
     },
 
     titleIcon: {

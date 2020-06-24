@@ -76,12 +76,13 @@ const InfoHub = () =>{
                 </Grid >
                 <Grid item >
                     <Grid container direction="row">
-                        <Grid item xs={0} sm={2} md={3} lg={2} xl={2}>
+                        <Grid item xs={false} sm={2} md={3} lg={2} xl={2}>
                         </Grid>
                         <Grid item xs={3} sm={3} md={2} lg={1} xl={1} className={classes.projects}>
                             <SeeProjects href="#Projects"/>
                         </Grid>
-                        <Grid item xs={8} sm={6} md={6} lg={8} xl={9}>
+                        <Grid item xs={false} sm={false}></Grid>
+                        <Grid item xs={7} sm={6} md={6} lg={8} xl={9}>
                             <motion.div
                                 initial='out' 
                                 animate='in' 
@@ -97,7 +98,7 @@ const InfoHub = () =>{
 
                             </motion.div>
                         </Grid>
-                        <Grid item xs={1} sm={2} md={2} md={false}></Grid>
+                        <Grid item xs={false} sm={2} md={2} md={false}></Grid>
                     </Grid>
                 </Grid>
                 </Grid>

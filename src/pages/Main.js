@@ -10,6 +10,7 @@ import Footer from '../components/mainPage/Footer';
 import {motion} from 'framer-motion';
 import { pageVariant, pageTransition } from './PageTransition';
 import CodingChallenges from '../components/mainPage/CodingChallenges';
+import silverFalls from '../img/Silver-Falls.gif';
 
 
 
@@ -35,6 +36,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'roboto',
     fontSize: '40px',
     textAlign: 'center'
+  },
+
+  seeProjects:{
+    background: `url(${silverFalls}) no-repeat center`,
+    backgroundSize: 'cover',
+    width: '100%',
+    minHeight: '125vh',
+    marginBottom: '200px'
   },
 
 
@@ -68,7 +77,9 @@ function Main() {
             <NavBar />
           </Grid >
         </Grid>
-        <SeeProjects href="#Projects"/>
+        <div className={classes.seeProjects}>
+          <SeeProjects href="#Projects"/>
+        </div>
       </div>
       <div className='Projects' id="projects">
         <ScrollUp />
