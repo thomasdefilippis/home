@@ -1,0 +1,14 @@
+.App {
+    
+  background: url('./img/Silver-Falls.gif') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 125vh;
+  margin-bottom: 200px;
+}
+
+.Projects {
+  background-color: rgba(0, 0, 0);
+  height: auto;
+}
+
