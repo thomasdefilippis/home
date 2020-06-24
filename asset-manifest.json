@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my_website/static/css/main.fc881042.chunk.css",
-    "main.js": "/my_website/static/js/main.3a2f2991.chunk.js",
-    "main.js.map": "/my_website/static/js/main.3a2f2991.chunk.js.map",
+    "main.css": "/my_website/static/css/main.faf89187.chunk.css",
+    "main.js": "/my_website/static/js/main.e9829c99.chunk.js",
+    "main.js.map": "/my_website/static/js/main.e9829c99.chunk.js.map",
     "runtime-main.js": "/my_website/static/js/runtime-main.e3302203.js",
     "runtime-main.js.map": "/my_website/static/js/runtime-main.e3302203.js.map",
     "static/js/2.e830394c.chunk.js": "/my_website/static/js/2.e830394c.chunk.js",
     "static/js/2.e830394c.chunk.js.map": "/my_website/static/js/2.e830394c.chunk.js.map",
     "index.html": "/my_website/index.html",
-    "precache-manifest.2e7567a68ae90fa9f12db7beb3497382.js": "/my_website/precache-manifest.2e7567a68ae90fa9f12db7beb3497382.js",
+    "precache-manifest.be29ed3084d9d36937fe0e74896d2f1e.js": "/my_website/precache-manifest.be29ed3084d9d36937fe0e74896d2f1e.js",
     "service-worker.js": "/my_website/service-worker.js",
-    "static/css/main.fc881042.chunk.css.map": "/my_website/static/css/main.fc881042.chunk.css.map",
+    "static/css/main.faf89187.chunk.css.map": "/my_website/static/css/main.faf89187.chunk.css.map",
     "static/js/2.e830394c.chunk.js.LICENSE.txt": "/my_website/static/js/2.e830394c.chunk.js.LICENSE.txt",
     "static/media/Book-Finder.JPG": "/my_website/static/media/Book-Finder.abc6a03c.JPG",
     "static/media/Border-Radius.PNG": "/my_website/static/media/Border-Radius.47d1b204.PNG",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3302203.js",
     "static/js/2.e830394c.chunk.js",
-    "static/css/main.fc881042.chunk.css",
-    "static/js/main.3a2f2991.chunk.js"
+    "static/css/main.faf89187.chunk.css",
+    "static/js/main.e9829c99.chunk.js"
   ]
 }
