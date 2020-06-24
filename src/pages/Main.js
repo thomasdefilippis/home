@@ -10,7 +10,7 @@ import Footer from '../components/mainPage/Footer';
 import {motion} from 'framer-motion';
 import { pageVariant, pageTransition } from './PageTransition';
 import CodingChallenges from '../components/mainPage/CodingChallenges';
-import silverFalls from '../img/Silver-Falls.gif';
+import silverFalls from '../img/Silver-Falls2.gif';
 
 
 
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     background: `url(${silverFalls}) no-repeat center`,
     backgroundSize: 'cover',
     width: '100%',
-    minHeight: '125vh',
+    height: '1000px',
     marginBottom: '200px'
   },
 
