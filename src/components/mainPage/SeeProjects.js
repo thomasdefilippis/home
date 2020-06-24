@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         width: '200px',
         height: 'auto',
-        left: "-30px",
+        left: "-15px",
         top: '80px',
         margin: '0 auto',
         textAlign: 'center',
