@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   projects:{
     paddingTop: '0px',
     paddingBottom: '100px',
-    marginTop: '100px'
+    marginTop: '20px'
   },
 
   example:{
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
       height: 'auto',
       borderBottom: 'solid 3px rgb(228, 130, 74)',
       borderTop: 'solid 3px rgb(228, 130, 74)',
-      marginTop: '70px'
+      marginTop: '20px'
   },
 
   App:{

@@ -8,11 +8,12 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 const useStyles = (theme) => ({
     buttonContainerStyles: {
 
-        width: '150px',
+        width: 'auto',
         height: 'auto',
         margin: '0 auto',
         textAlign: 'center',
-        marginBottom: '0px'
+        marginBottom: '0px',
+        marginTop: '10px'
     },
 
     buttonStyles:{
@@ -30,17 +31,26 @@ const useStyles = (theme) => ({
         }
     },
 
-    arrowStyles:{
+    arrowStyles1:{
         position: 'relative',
         fontSize: '70px',
+        left: '-80px',
         color: "rgb(228, 130, 74)"
     },
 
+    arrowStyles2:{
+        position: 'relative',
+        fontSize: '70px',
+        right: '-80px',
+        color: "rgb(228, 130, 74)"
+    },
+
+
     line:{
         height: '20px',
-        borderLeft: '3px solid rgb(228, 130, 74)',
-        width: '5px',
-        marginLeft: '72px',
+        borderBottom: '3px solid rgb(228, 130, 74)',
+        width: '40px',
+        display: 'inline-block'
 
     },
     
@@ -54,8 +64,8 @@ class ScrollUp extends React.Component {
     const { classes } =  this.props;
     return(
         <div className={classes.buttonContainerStyles}>
-            <ArrowUpwardIcon className={classes.arrowStyles}/>
-            <br id='projects'></br>
+            <ArrowUpwardIcon className={classes.arrowStyles1}/>
+            <br ></br>
             <Link
                         activeClass="active"
                         to="navBar"
@@ -64,7 +74,7 @@ class ScrollUp extends React.Component {
                         offset={-70}
                         duration= {500}
             >
-                <Button className={classes.buttonStyles} >Up</Button>
+                <Button className={classes.buttonStyles} id='projects'>Up</Button>
             </Link>
             <div className={classes.line}>
             </div>
@@ -79,7 +89,7 @@ class ScrollUp extends React.Component {
                 <Button className={classes.buttonStyles} >Coding Challenges</Button>
             </Link>
             <br></br>
-            <ArrowDownwardIcon className={classes.arrowStyles}  />
+            <ArrowDownwardIcon className={classes.arrowStyles2}  />
 
         </div>
     )

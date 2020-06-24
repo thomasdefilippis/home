@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         height: 'auto',
         textAlign: 'center',
         marginBottom: '200px',
-        marginTop: '100px'
+        marginTop: '10px'
     },
 
     header:{
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
     arrowStyles:{
         position: 'relative',
-        fontSize: '100px',
+        fontSize: '70px',
         color: "rgb(228, 130, 74)"
     },
 
@@ -47,16 +47,16 @@ const useStyles = makeStyles((theme) => ({
     buttonContainerStyles: {
 
         width: '150px',
-        height: '300px',
+        height: 'auto',
         margin: '0 auto',
         textAlign: 'center',
         marginBottom: '250px'
     },
 
     buttonStyles:{
-        fontSize: '20px',
-        height: '125px',
-        width: '125px',
+        fontSize: '18px',
+        height: '120px',
+        width: '120px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
         backgroundColor: 'black',
@@ -83,9 +83,8 @@ const CodingChallenges = () =>{
     }
     return(
         <div className={classes.root}>
-            <ArrowUpwardIcon className={classes.arrowStyles} 
-            id="codingChallenges"/>
-            <br></br>
+            <ArrowUpwardIcon className={classes.arrowStyles} />
+            <br id="codingChallenges"></br>
             <Link
                         activeClass="active"
                         to="projects"

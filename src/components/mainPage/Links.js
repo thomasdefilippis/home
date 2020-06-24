@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
 
 
     line:{
-        height: '40px',
+        height: '20px',
         borderLeft: '3px solid black',
         width: '5px',
         marginLeft: '98px',
