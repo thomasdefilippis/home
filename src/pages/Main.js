@@ -28,14 +28,14 @@ const useStyles = makeStyles((theme) => ({
 
   example:{
     color: "white",
-    fontSize: '40px',
+    fontSize: '20px',
     
   },
 
   header:{
     color: 'rgb(228, 130, 74)',
     fontFamily: 'roboto',
-    fontSize: '40px',
+    fontSize: '50px',
     textAlign: 'center'
   },
 

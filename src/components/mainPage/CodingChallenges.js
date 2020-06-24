@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         height: 'auto',
         textAlign: 'center',
-        marginBottom: '200px',
+        marginBottom: '150px',
         marginTop: '10px'
     },
 
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
 const CodingChallenges = () =>{
     const classes = useStyles();
     const getProjectCard = (projectObj) => {
-        const {title, imageUrl, description, gifUrl, sourceLink} = projectObj;
+        const {title, imageUrl, description, edabit, gifUrl, sourceLink} = projectObj;
         return(
             <Grid item xs={12} md={4} className={classes.projectContainer} key={title}>
                 <ProjectCard projectObj={ projectObj } />

@@ -12,13 +12,14 @@ import ModalImage from './ModalImage';
 
 const useStyles = (theme) =>({
   root: {
-    maxWidth: '340px',
+    maxWidth: '360px',
     backgroundColor: 'black',
     opacity: '0.9',
     border: 'solid 3px rgb(228, 130, 74)',
     height: 'auto',
+    width: 'auto',
     margin: '0 auto',
-    padding: '1px',
+    padding: '4px',
     '&:hover': {
         borderRadius: '3%',
         opacity: '1'
@@ -30,9 +31,9 @@ const useStyles = (theme) =>({
  
 
   typographyStyles:{
-      color: 'rgb(228, 130, 74)',
+      color: '#567CAA',
       marginTop: '30px',
-      fontSize: '17px',
+      fontSize: '19px',
       textAlign: 'left',
       wordWrap: 'break-word'
   },
@@ -41,7 +42,7 @@ const useStyles = (theme) =>({
     margin: '0 auto',
     textAlign: 'center',
     color: 'rgb(228, 130, 74)',
-    fontSize: '25px',
+    fontSize: '27px',
 
   },
 
@@ -72,8 +73,9 @@ const useStyles = (theme) =>({
   },
 
   sourceLink:{
-    paddingBottom:'12px',
-    textDecoration: 'none'
+    paddingBottom: '0px',
+    textDecoration: 'none',
+    
   },
 
   

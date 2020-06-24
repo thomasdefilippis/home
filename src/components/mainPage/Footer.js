@@ -58,8 +58,8 @@ const Footer = () => {
     const classes = useStyles();
     return(
         <AppBar position="static" className={classes.root} id="navBar">
-            <Toolbar style={{paddingLeft: '5px', paddingRight: '5px'}}>
-                <Grid container direction="row" style={{paddingLeft: '0px'}}>
+            <Toolbar style={{paddingLeft: '0px', paddingRight: '15px'}}>
+                <Grid container direction="row" >
                     <Grid item className={classes.linkGrid} xs={11}>
                         <a className={classes.LinkStyles} rel="noopener noreferrer" target="_blank" href="https://github.com/thomasdefilippis">
                             <GitHubIcon className={classes.IconStyles} />

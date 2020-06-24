@@ -23,7 +23,7 @@ import musiconGif from './musiconGif.gif';
     {
         title: 'Book-Finder App',
         imageUrl: BookFinder,
-        description: 'Developed with React and Material UI, this application fetches data from the google books API and extracts ten books from the returned json object. The application grabs the users text input for Author and/or Title and use them to manipulate the queries parameters on the API url.',
+        description: 'Developed with React and Material UI, this application fetches data from the google books API and extracts ten books from the returned json object. The application grabs the users text input for Author and/or Title and use them to manipulate the query parameters on the API url.',
         gifUrl: bookFinder,
         sourceLink: 'https://github.com/thomasdefilippis/Book-Finder-App'
     },
