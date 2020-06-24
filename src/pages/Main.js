@@ -11,6 +11,7 @@ import {motion} from 'framer-motion';
 import { pageVariant, pageTransition } from './PageTransition';
 import CodingChallenges from '../components/mainPage/CodingChallenges';
 import silverFalls from '../img/Silver-Falls2.gif';
+import { mergeClasses } from '@material-ui/styles';
 
 
 
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   projects:{
     paddingTop: '0px',
     paddingBottom: '100px',
-    marginTop: '25px'
+    marginTop: '100px'
   },
 
   example:{
@@ -43,9 +44,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     width: '100%',
     height: '1000px',
+    paddingTop: '100px',
     marginBottom: '200px'
   },
 
+  projectsSection:{
+    height: 'auto'
+  },
 
   title:{
       width: '100%',
@@ -72,16 +77,18 @@ function Main() {
       transition={pageTransition}
     >
       <div className="App">
-        <Grid container direction="column" >
+        <Grid container direction="column">
           <Grid item >
             <NavBar />
           </Grid >
+          <Grid item >
+            <div className={classes.seeProjects}>
+              <SeeProjects href="#Projects"/>
+            </div>
+          </Grid>
         </Grid>
-        <div className={classes.seeProjects}>
-          <SeeProjects href="#Projects"/>
-        </div>
       </div>
-      <div className='Projects' id="projects">
+      <div className={classes.projectsSection}>
         <ScrollUp />
         <header className={classes.title} >
             <h1 className={classes.header}>Projects</h1>

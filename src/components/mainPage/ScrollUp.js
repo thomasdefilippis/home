@@ -16,9 +16,9 @@ const useStyles = (theme) => ({
     },
 
     buttonStyles:{
-        fontSize: '20px',
-        height: '125px',
-        width: '125px',
+        fontSize: '18px',
+        height: '120px',
+        width: '120px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
         backgroundColor: 'black',
@@ -32,12 +32,12 @@ const useStyles = (theme) => ({
 
     arrowStyles:{
         position: 'relative',
-        fontSize: '90px',
+        fontSize: '70px',
         color: "rgb(228, 130, 74)"
     },
 
     line:{
-        height: '40px',
+        height: '20px',
         borderLeft: '3px solid rgb(228, 130, 74)',
         width: '5px',
         marginLeft: '72px',
@@ -54,8 +54,8 @@ class ScrollUp extends React.Component {
     const { classes } =  this.props;
     return(
         <div className={classes.buttonContainerStyles}>
-            <ArrowUpwardIcon className={classes.arrowStyles} />
-            <br></br>
+            <ArrowUpwardIcon className={classes.arrowStyles}/>
+            <br id='projects'></br>
             <Link
                         activeClass="active"
                         to="navBar"
@@ -79,7 +79,7 @@ class ScrollUp extends React.Component {
                 <Button className={classes.buttonStyles} >Coding Challenges</Button>
             </Link>
             <br></br>
-            <ArrowDownwardIcon className={classes.arrowStyles} />
+            <ArrowDownwardIcon className={classes.arrowStyles}  />
 
         </div>
     )
