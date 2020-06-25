@@ -6,9 +6,10 @@ import ContactLinks from './ContactLinks';
 
 const useStyles = makeStyles((theme) => ({
     buttonContainerStyles: {
-        width: '100%',
+        width: 'auto',
         height: 'auto',
         marginTop: '90px',
+        paddingLeft: '30%'
     },
 
     buttonStyles:{

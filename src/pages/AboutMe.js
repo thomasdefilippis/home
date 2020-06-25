@@ -4,7 +4,8 @@ import Description from '../components/AboutMe/Description';
 
 const useStyles = makeStyles((theme) => ({
     root:{
-      width: 'auto'
+      width: 'auto',
+      display: 'inline-block'
     },
   
     imageContainer:{

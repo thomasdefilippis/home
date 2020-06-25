@@ -8,10 +8,10 @@ import { Route, Switch } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     buttonContainerStyles: {
-        width: '100%',
+        width: 'auto',
         height: 'auto',
-        marginTop: '80px',
-        marginLeft: '2px'
+        marginTop: '50px',
+        paddingLeft: '100px'
     },
 
     buttonStyles:{

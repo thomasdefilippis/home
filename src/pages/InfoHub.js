@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Grid } from '@material-ui/core';
+import { makeStyles, Grid, Hidden } from '@material-ui/core';
 import NavBar from '../components/AboutMe/NavBar';
 import SeeProjects from '../components/AboutMe/SeeProjects';
 import ProjectContent from '../components/mainPage/ProjectContent';
@@ -17,13 +17,15 @@ import CodingChallenges from '../components/mainPage/CodingChallenges';
 const useStyles = makeStyles((theme) => ({
     root:{
         backgroundColor: 'black',
-        height: 'auto'
+        height: 'auto',
+        width: 'auto'
 
     },
     navigation:{
         width: '100%',
         minHeight: '125vh',
         backgroundColor: 'black',
+        marginBottom: '400px',
     },
 
 
@@ -32,18 +34,20 @@ const useStyles = makeStyles((theme) => ({
     },
 
     change:{
-        marginLeft: '10px'
+        marginLeft: '0px',
+        width: 'auto'
     },
 
     projects:{
       paddingTop: '10px',
       paddingBottom: '100px',
-      marginTop: '100px'
+      marginTop: '40px',
+      
     },
     
     example:{
-    color: "white",
-    fontSize: '40px',
+        color: "white",
+        fontSize: '40px',
     },
 
     header:{
@@ -65,8 +69,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const InfoHub = () =>{
+const InfoHub = (props) =>{
     const classes = useStyles();
+    const { width } = props;
     return(
         <div>
             <div className={classes.navigation}>
@@ -76,12 +81,11 @@ const InfoHub = () =>{
                 </Grid >
                 <Grid item >
                     <Grid container direction="row">
-                        <Grid item xs={1} sm={2} md={3} lg={2} xl={2}>
+                        <Grid item className={classes.projects} xs={1} sm={1} md={2} lg={1} xl={1}>
+                            <Hidden smDown className={classes.projectButtons}><SeeProjects href="#Projects"/></Hidden>
                         </Grid>
-                        <Grid item xs={3} sm={3} md={2} lg={1} xl={1} className={classes.projects}>
-                            <SeeProjects href="#Projects"/>
-                        </Grid>
-                        <Grid item xs={8} sm={6} md={6} lg={8} xl={9}>
+                        <Grid item xs = {false} sm={false} md={1} lg={0}></Grid>
+                        <Grid item xs={10} sm={10} md={7} lg={9} xl={10} className={classes.route}>
                             <motion.div
                                 initial='out' 
                                 animate='in' 
@@ -97,7 +101,7 @@ const InfoHub = () =>{
 
                             </motion.div>
                         </Grid>
-                        <Grid item xs={1} sm={2} md={2} md={false}></Grid>
+                        <Grid item xs= {1} md={1}></Grid>
                     </Grid>
                 </Grid>
                 </Grid>
