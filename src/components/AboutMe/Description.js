@@ -1,7 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Hidden } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+
+
 const useStyles = makeStyles(() => ({
     description: {
         backgroundColor: 'black',
@@ -13,13 +15,12 @@ const useStyles = makeStyles(() => ({
         fontSize: '40px',
     },
 
-    text:{
-        textAlign: 'left',
+    paragraph2:{
+        fontSize: '20px'
     },
 
-    myName:{
-        fontSize:'50px',
-        borderBottom: '1px solid rgb(228, 130, 74)'
+    text:{
+        textAlign: 'left',
     },
 
     arrow:{
@@ -36,22 +37,46 @@ const Description = () =>{
     const classes = useStyles();
     return (
         <div className={classes.description}>
-            <section className={classes.text}>
-                <p className={classes.paragraph}>Life Long Learner
-                -that's the best way to describe me. Whether it's studying math proofs and algorithms as a college student, crafting an engaging lesson as a math teacher, or designing a beautiful and consistent website, I always give it my all.<br></br><br></br>
-                I am a self taught developer based out of Denver, Colorado, who has strong skills in React JS front-end development. In fact, I designed this whole site in React. Although, I am mostly focused on front-end development, I have experience building APIs in Node libraries such as Node.express, managing databases using mongoDB, and authenticating login info using passport-jwt.
-                Even though I have little experience working formally, I am an extremely hard worker, fast-learner, effective communicator, and creative designer. Everyday, I am not only gaining a vast amount of knowledge, but also testing that knowledge in projects. Check out my projects below    
-                <Link
-                        activeClass="active"
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration= {500}>
-                    <ArrowDownwardIcon className={classes.arrow}/>
-                </Link>
-                </p>
-            </section>
+            <Hidden xsDown>
+                <section className={classes.text}>
+                            <p className={classes.paragraph1}>Life Long Learner- 
+                                that's the best way to describe me. Whether it's studying math proofs and algorithms as a college student, crafting an engaging lesson as a math teacher, or designing a beautiful and consistent website, I always give it my all.<br></br><br></br>
+                                I'm Thomas Defilippis, and I am a self taught developer based out of Denver, Colorado, who has strong skills in React JS front-end development. In fact, I designed this whole site in React. <br></br><br></br>
+                                Although, I am mostly focused on front-end development, I have experience building APIs in Node libraries such as Node.express, managing databases using mongoDB, and authenticating login info using passport-jwt.<br></br><br></br>
+                                Even though I have little experience working formally, I am an extremely hard worker, fast-learner, effective communicator, and creative designer. Everyday, I am not only gaining a vast amount of knowledge, but also testing that knowledge in projects.<br></br> 
+                                Check out my projects below    
+                                <Link
+                                        activeClass="active"
+                                        to="projects"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration= {500}>
+                                    <ArrowDownwardIcon className={classes.arrow}/>
+                                </Link>
+                            </p>
+                </section>
+            </Hidden>
+            <Hidden smUp>
+                <section className={classes.text}>
+                    <p className={classes.paragraph2}>Life Long Learner- 
+                        that's the best way to describe me. Whether it's studying math proofs and algorithms as a college student, crafting an engaging lesson as a math teacher, or designing a beautiful and consistent website, I always give it my all.<br></br><br></br>
+                        I'm Thomas Defilippis, and I am a self taught developer based out of Denver, Colorado, who has strong skills in React JS front-end development. In fact, I designed this whole site in React. <br></br><br></br>
+                        Although, I am mostly focused on front-end development, I have experience building APIs in Node libraries such as Node.express, managing databases using mongoDB, and authenticating login info using passport-jwt.<br></br><br></br>
+                        Even though I have little experience working formally, I am an extremely hard worker, fast-learner, effective communicator, and creative designer. Everyday, I am not only gaining a vast amount of knowledge, but also testing that knowledge in projects.<br></br> 
+                        Check out my projects below    
+                        <Link
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration= {500}>
+                            <ArrowDownwardIcon className={classes.arrow}/>
+                        </Link>
+                    </p>
+                </section>
+            </Hidden>
         </div>
     )
 }

@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     IconStyles:{
-        fontSize: '60px',
+        fontSize: '50px',
         cursor: 'pointer',
         '&:hover':{
             opacity: '0.7'
