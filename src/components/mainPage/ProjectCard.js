@@ -33,16 +33,18 @@ const useStyles = (theme) =>({
   typographyStyles:{
       color: '#567CAA',
       marginTop: '30px',
-      fontSize: '19px',
+      fontSize: '20px',
       textAlign: 'left',
-      wordWrap: 'break-word'
+      wordWrap: 'break-word',
+      fontFamily: 'Helvetica'
   },
 
   title:{
     margin: '0 auto',
     textAlign: 'center',
     color: 'rgb(228, 130, 74)',
-    fontSize: '27px',
+    fontSize: '28px',
+    fontFamily: 'Helvetica'
 
   },
 
@@ -58,23 +60,35 @@ const useStyles = (theme) =>({
 
   links:{
       color: "#567CAA",
-      fontSize: '15px',
+      fontSize: '16px',
+      fontWeight: '500',
+      fontFamily: 'Helvetica',
       "&:hover": {
           textDecoration: 'underline',
-      }
+          color: 'rgb(228, 130, 74)'
+      },
   },
 
   edabit:{
     opacity:'0.9',
     color: 'rgb(228, 130, 74)',
     "&:hover":{
-      opacity: '1.0'
+      opacity: '1.0',
     }
   },
 
   sourceLink:{
     paddingBottom: '0px',
     textDecoration: 'none',
+    color: '#567CAA',
+    fontSize: '16px',
+    fontFamily: 'Helvetica',
+    textTransform: 'uppercase',
+    fontWeight: '500',
+    '&:hover':{
+      textDecoration: 'underline',
+      color: 'rgb(228, 130, 74)'
+    }
     
   },
 
@@ -158,9 +172,7 @@ class ProjectCard extends React.Component {
             Preview
           </Button>
           <a href={sourceLink} rel="noopener noreferrer" target="_blank" className={classes.sourceLink}>
-            <Button size="small" color="primary" className={classes.links} >
               Source Code
-            </Button>
           </a>
         </CardActions>
       </Card>
