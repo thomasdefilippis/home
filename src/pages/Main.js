@@ -26,11 +26,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '30px'
   },
 
-  example:{
-    color: "white",
-    fontSize: '20px',
-    
-  },
 
   header:{
     color: 'rgb(228, 130, 74)',
@@ -95,12 +90,12 @@ function Main() {
             <h1 className={classes.header}>Projects</h1>
         </header>
         <Grid container direction='row' className={classes.projects} >
-          <Grid item className={classes.example} xs={false} sm={1} md={1} lg={2} xl={2}>
+          <Grid item className={classes.example} xs={1} sm={1} md={1} lg={2} xl={2}>
           </Grid>
-          <Grid item className={classes.example} xs={12} sm={10} md={10} lg={8} xl={8}>
+          <Grid item className={classes.example} xs={10} sm={10} md={10} lg={8} xl={8}>
             <ProjectContent />
           </Grid>
-          <Grid item className={classes.example} xs={false} sm={1} md={1} lg={2} xl={2}>
+          <Grid item className={classes.example} xs={1} sm={1} md={1} lg={2} xl={2}>
           </Grid>
         </Grid>
       </div>

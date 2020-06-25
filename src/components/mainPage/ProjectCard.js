@@ -134,7 +134,7 @@ class ProjectCard extends React.Component {
 
             component='img'
             alt='image supposed to be here'
-            height="250"
+            height="250px"
             image= {imageUrl}
             title='click to enlarge.'
             onClick={this.handleImageClick}

@@ -30,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
     },
 
     link:{
+        flex: 1,
         color: 'rgb(228, 130, 74)',
         marginTop: '20px',
-        borderRight: '2px solid rgb(228, 130, 74)',
         width: '100px',
         height: '60px'
     },
@@ -50,12 +50,6 @@ const NavBar = () => {
         <AppBar position="static" className={classes.root} id="navBar">
             <Toolbar>
                 <Link to='/' className={classes.link}><Typography className={classes.linkTypography}>Home</Typography></Link>
-                <Typography className={classes.typographyStyles}>
-                     Thomas Defilippis
-                </Typography>
-                <Typography>
-
-                </Typography>
                 <TitleIcon className={classes.titleIcon}/>
             </Toolbar>
         </AppBar>
