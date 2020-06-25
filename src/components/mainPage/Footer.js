@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#000000",
         height: '70px',
         borderTop: '2px solid rgb(228, 130, 74)',
-        width: '90%',
+        width: '95%',
         marginBottom: '40px',
         margin: '0 auto'
     },
@@ -60,7 +60,7 @@ const Footer = () => {
         <AppBar position="static" className={classes.root} id="navBar">
             <Toolbar style={{paddingLeft: '0px', paddingRight: '15px'}}>
                 <Grid container direction="row" >
-                    <Grid item className={classes.linkGrid} xs={11}>
+                    <Grid item className={classes.linkGrid} xs={10}>
                         <a className={classes.LinkStyles} rel="noopener noreferrer" target="_blank" href="https://github.com/thomasdefilippis">
                             <GitHubIcon className={classes.IconStyles} />
                         </a>
@@ -71,7 +71,7 @@ const Footer = () => {
                             <FacebookIcon className={classes.IconStyles} />
                         </a>
                     </Grid>
-                    <Grid item xs={1} className={classes.titleIconGrid}>
+                    <Grid item xs={2} className={classes.titleIconGrid}>
                         <TitleIcon className={classes.titleIcon}/>
                     </Grid>
                 </Grid>

@@ -5,23 +5,25 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles((theme) => ({
   image:{
-      width: 'auto',
-      height: 'auto'
+      maxWidth: '100%',
+      maxHeight: '100%'
   },
   dialog:{
       textAlign: 'center'
   },
   button:{
     color: 'black',
-    fontSize: '30px',
     background: 'rgb(228, 130, 74)',
     margin: '0 auto',
-    borderRadius: '20%',
-    marginTop: '10px',
-    marginBottom: '10px',
+    borderRadius: '40%',
+    marginTop: '2px',
+    marginBottom: '4x',
     "&:hover": {
       background: '#567CAA'
     }
@@ -30,12 +32,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ModalComponent(props) {
   const classes = useStyles();
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
 
   return (
       
       <Dialog
-        fullScreen
+        fullScreen={fullScreen}
+        maxWidth="lg"
         className={classes.dialog}
         open={props.open}
         onClose={props.onClick}
@@ -44,7 +49,7 @@ export default function ModalComponent(props) {
         <DialogContent className={classes.dialog}>
           <img alt="gif that is supposed to load" src={props.gifUrl} className={classes.image} height="auto" width="auto"/>
         </DialogContent>
-        <DialogActions style={{textAlign: 'center'}}>
+        <DialogActions >
           <Button onClick={props.onClick} className={classes.button}>
             Close
           </Button>
