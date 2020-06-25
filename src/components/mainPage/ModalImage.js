@@ -23,9 +23,9 @@ const useStyles = makeStyles((theme) => ({
     color: 'black',
     background: 'rgb(228, 130, 74)',
     margin: '0 auto',
-    borderRadius: '30%',
+    borderRadius: '2%',
     marginTop: '2px',
-    marginBottom: '4x',
+    marginBottom: '10x',
     "&:hover": {
       background: '#567CAA'
     }

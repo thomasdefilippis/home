@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Grid, Hidden } from '@material-ui/core';
+import { makeStyles, Grid, Hidden, Button } from '@material-ui/core';
 import NavBar from '../components/AboutMe/NavBar';
 import SeeProjects from '../components/AboutMe/SeeProjects';
 import ProjectContent from '../components/mainPage/ProjectContent';
@@ -12,6 +12,8 @@ import AboutMe from './AboutMe';
 import ContactMe from './ContactMe';
 import { Route, Switch } from 'react-router-dom';
 import CodingChallenges from '../components/mainPage/CodingChallenges';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import { Link } from 'react-scroll';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -65,6 +67,52 @@ const useStyles = makeStyles((theme) => ({
         borderTop: 'solid 3px rgb(228, 130, 74)',
         marginTop: '70px'
     },
+
+    codingChallenges:{
+        backgroundColor: 'black',
+        width: '100%',
+        height: 'auto',
+        textAlign: 'center',
+        marginBottom: '150px',
+        marginTop: '10px'
+    },
+
+    header:{
+        color: 'rgb(228, 130, 74)',
+        fontFamily: 'roboto',
+        fontSize: '40px'
+    },
+
+    arrowStyles:{
+        position: 'relative',
+        fontSize: '70px',
+        color: "rgb(228, 130, 74)"
+    },
+
+    buttonContainerStyles: {
+
+        width: '150px',
+        height: 'auto',
+        margin: '0 auto',
+        textAlign: 'center',
+        marginBottom: '250px'
+    },
+
+    buttonStyles:{
+        fontSize: '18px',
+        height: '120px',
+        width: '120px',
+        border: 'solid 2px rgb(228, 130, 74)',
+        borderRadius: '50%',
+        backgroundColor: 'black',
+        color: 'rgb(228, 130, 74)',
+        textTransform: 'none',
+        marginBottom: '0px',
+        '&:hover': {
+            border: 'solid 4px rgb(228, 130, 74)',
+        }
+    },
+
   
 }));
 
@@ -122,8 +170,33 @@ const InfoHub = (props) =>{
                 </Grid>
                 </Grid>
             </div>
-            <CodingChallenges />
-            <Footer />
+            <div className={classes.codingChallenges}>
+                <ArrowUpwardIcon className={classes.arrowStyles} />
+                <br id="codingChallenges"></br>
+                <Link
+                            activeClass="active"
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500}
+                >
+                    <Button className={classes.buttonStyles} >Up</Button>
+                </Link>
+                <header className={classes.title} >
+                    <h1 className={classes.header}>Coding Challenges</h1>
+                </header>
+                <Grid container direction='row' className={classes.projects} >
+                <Grid item className={classes.example} xs={1} sm={1} md={1} lg={2} xl={2}>
+                </Grid>
+                <Grid item className={classes.example} xs={10} sm={10} md={10} lg={8} xl={8}>
+                    <CodingChallenges />
+                </Grid>
+                <Grid item className={classes.example} xs={1} sm={1} md={1} lg={2} xl={2}>
+                </Grid>
+                </Grid>
+
+            </div>
         </div>
         )
 }

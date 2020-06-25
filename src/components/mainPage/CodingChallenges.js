@@ -7,26 +7,6 @@ import { Link } from 'react-scroll';
 
 
 const useStyles = makeStyles((theme) => ({
-    root:{
-        backgroundColor: 'black',
-        width: '100%',
-        height: 'auto',
-        textAlign: 'center',
-        marginBottom: '150px',
-        marginTop: '10px'
-    },
-
-    header:{
-        color: 'rgb(228, 130, 74)',
-        fontFamily: 'roboto',
-        fontSize: '40px'
-    },
-
-    arrowStyles:{
-        position: 'relative',
-        fontSize: '70px',
-        color: "rgb(228, 130, 74)"
-    },
 
     title:{
         width: '100%',
@@ -43,31 +23,9 @@ const useStyles = makeStyles((theme) => ({
     projectContainer:{
         textAlign: 'left'
     },
+    
 
-    buttonContainerStyles: {
-
-        width: '150px',
-        height: 'auto',
-        margin: '0 auto',
-        textAlign: 'center',
-        marginBottom: '250px'
-    },
-
-    buttonStyles:{
-        fontSize: '18px',
-        height: '120px',
-        width: '120px',
-        border: 'solid 2px rgb(228, 130, 74)',
-        borderRadius: '50%',
-        backgroundColor: 'black',
-        color: 'rgb(228, 130, 74)',
-        textTransform: 'none',
-        marginBottom: '0px',
-        '&:hover': {
-            border: 'solid 4px rgb(228, 130, 74)',
-        }
-    },
-
+    
 }))
 
 
@@ -83,34 +41,11 @@ const CodingChallenges = () =>{
     }
     return(
         <div className={classes.root}>
-            <ArrowUpwardIcon className={classes.arrowStyles} />
-            <br id="codingChallenges"></br>
-            <Link
-                        activeClass="active"
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration= {500}
-            >
-                <Button className={classes.buttonStyles} >Up</Button>
-            </Link>
-            <header className={classes.title} >
-                <h1 className={classes.header}>Coding Challenges</h1>
-            </header>
             <section>
-                <Grid container direction='row' className={classes.codingChallenges} >
-                    <Grid item className={classes.example} xs={false} sm={1} md={1} lg={2} xl={2}>
-                    </Grid>
-                    <Grid item className={classes.example} xs={12} sm={10} md={10} lg={8} xl={8}>
-                        <Grid container direction="row" spacing={4}>
-                            {CodingChallengeData.map(projectObj => getProjectCard(projectObj))}
+                <Grid container direction="row" spacing={4}>
+                    {CodingChallengeData.map(projectObj => getProjectCard(projectObj))}
 
-                        </Grid>
-                    </Grid>
-                    <Grid item className={classes.example} xs={false} sm={1} md={1} lg={2} xl={2}>
-                    </Grid>
-                    </Grid>
+                </Grid>
             </section>
         </div>
     )

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'black',
     background: 'rgb(228, 130, 74)',
     margin: '0 auto',
-    borderRadius: '40%',
+    borderRadius: '2%',
     marginTop: '2px',
     marginBottom: '4x',
     "&:hover": {
@@ -41,6 +41,7 @@ export default function ModalComponent(props) {
       <Dialog
         fullScreen={fullScreen}
         maxWidth="lg"
+        maxHeight="lg"
         className={classes.dialog}
         open={props.open}
         onClose={props.onClick}
