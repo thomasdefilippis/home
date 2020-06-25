@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import {TextField } from '@material-ui/core';
+import {TextField, Hidden } from '@material-ui/core';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 
@@ -23,7 +23,8 @@ const useStyles = (theme) => ({
     },
 
     typographyStyles:{
-        marginBottom: '100px'
+        marginBottom: '100px',
+        
     },
 
     header:{
@@ -35,8 +36,8 @@ const useStyles = (theme) => ({
         backgroundColor: 'black',
         width: 'auto',
         height: 'auto',
-        marginTop: '90px',
-        paddingLeft: '50px',
+        marginTop: '50px',
+        paddingLeft: '0px',
         color: 'rgb(228, 130, 74)',
         fontFamily: 'roboto',
         fontSize: '40px',
@@ -52,7 +53,7 @@ const useStyles = (theme) => ({
 
     message:{
         backgroundColor: 'white',
-        width: '91%',
+        width: '87%',
     },
 
     paragraph:{
@@ -70,7 +71,7 @@ const useStyles = (theme) => ({
     },
 
     submit:{
-        marginLeft: '10px',
+        marginLeft: '30px',
         width: '150px',
         height: '40px',
         marginTop: '25px',
@@ -79,11 +80,11 @@ const useStyles = (theme) => ({
         fontSize: '30px',
         fontFamily: 'roboto',
         fontWeight: 'bold',
-        borderRadius: '10%',
+        borderRadius: '3%',
         border: 'none',
         opacity: '1',
         '&:hover': {
-            opaicty: '0.3'
+            background: '#567CAA'
         }
     }
 });
@@ -185,46 +186,94 @@ class Form extends React.Component {
     const { classes } = this.props;
     return (
         <div className={classes.description}>
-            <div className={classes.typographyStyles}>
-                    <h1 className={classes.header}>Get in touch</h1>
-                    <p className={classes.paragraph}>If you want to get in touch, fill out the form below or send an email to <a className={classes.emailLink} href="mailto:thomasdefilippis@gmail.com?subject=Portfolio">thomasdefilippis@gmail.com</a></p>
-            </div>
-            <form noValidate className={classes.root} autoComplete="off">
-                <TextField 
-                    id="outlined-basic" 
-                    label="Full Name" 
-                    variant="outlined" 
-                    InputProps={{
-                        className: classes.textField
-                    }}
-                    onChange={this.nameChange}
-                    required
-                />
-                <br></br>
-                <TextField 
-                    id="outlined-basic" 
-                    label="e-mail" 
-                    variant="outlined" 
-                    InputProps={{
-                        className: classes.textField
-                    }}
-                    required
-                    onChange={this.emailChange}
-                />
-                <br></br>
-                <TextField 
-                    id="outlined-basic" 
-                    label="Message" 
-                    variant="outlined" 
-                    multiline={true}
-                    rows={12} 
-                    className={classes.message}
-                    animate={false}
-                    onChange={this.messageChange}
-                />
-                <br></br>
-                <input type="submit" value="Send" className={classes.submit} onClick={this.handleSubmit}/>
-            </form>
+            <Hidden xsDown>
+                <div className={classes.typographyStyles}>
+                        <h1 className={classes.header}>Get in touch</h1>
+                        <p className={classes.paragraph}>If you want to get in touch, fill out the form below or send an email to <a className={classes.emailLink} href="mailto:thomasdefilippis@gmail.com?subject=Portfolio">thomasdefilippis@gmail.com</a></p>
+                </div>
+            </Hidden>
+            <Hidden smUp>
+                <div className={classes.typographyStyles} style={{textAlign:'center'}}>
+                        <h1 className={classes.header}>Get in touch</h1>
+                        <p className={classes.paragraph}>If you want to get in touch, fill out the form below or send an email to <a className={classes.emailLink} href="mailto:thomasdefilippis@gmail.com?subject=Portfolio">thomasdefilippis@gmail.com</a></p>
+                </div>
+            </Hidden>
+            <Hidden xsDown>
+                <form noValidate className={classes.root} autoComplete="off">
+                    <TextField 
+                        id="outlined-basic" 
+                        label="Full Name" 
+                        variant="outlined" 
+                        InputProps={{
+                            className: classes.textField
+                        }}
+                        onChange={this.nameChange}
+                        required
+                    />
+                    <br></br>
+                    <TextField 
+                        id="outlined-basic" 
+                        label="e-mail" 
+                        variant="outlined" 
+                        InputProps={{
+                            className: classes.textField
+                        }}
+                        required
+                        onChange={this.emailChange}
+                    />
+                    <br></br>
+                    <TextField 
+                        id="outlined-basic" 
+                        label="Message" 
+                        variant="outlined" 
+                        multiline={true}
+                        rows={12} 
+                        className={classes.message}
+                        animate={false}
+                        onChange={this.messageChange}
+                    />
+                    <br></br>
+                    <input type="submit" value="Send" className={classes.submit} onClick={this.handleSubmit}/>
+                </form>
+            </Hidden>
+            <Hidden smUp>
+                <form noValidate className={classes.root} autoComplete="off" style={{textAlign: 'center'}}>
+                    <TextField 
+                        id="outlined-basic" 
+                        label="Full Name" 
+                        variant="outlined" 
+                        InputProps={{
+                            className: classes.textField
+                        }}
+                        onChange={this.nameChange}
+                        required
+                    />
+                    <br></br>
+                    <TextField 
+                        id="outlined-basic" 
+                        label="e-mail" 
+                        variant="outlined" 
+                        InputProps={{
+                            className: classes.textField
+                        }}
+                        required
+                        onChange={this.emailChange}
+                    />
+                    <br></br>
+                    <TextField 
+                        id="outlined-basic" 
+                        label="Message" 
+                        variant="outlined" 
+                        multiline={true}
+                        rows={12} 
+                        className={classes.message}
+                        animate={false}
+                        onChange={this.messageChange}
+                    />
+                    <br></br>
+                    <input type="submit" value="Send" className={classes.submit} onClick={this.handleSubmit} style={{marginLeft:'0px'}}/>
+                </form>
+            </Hidden>
         </div>
      )
     }
