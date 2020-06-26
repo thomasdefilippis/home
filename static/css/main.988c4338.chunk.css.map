@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AACA,KAEE,WAAY,CACZ,UAAW,CACX,eAAgB,CAChB,gDACF","file":"main.988c4338.chunk.css","sourcesContent":["\nhtml {\n\n  height: auto;\n  width: auto;\n  overflow: scroll;\n  background-image: linear-gradient(0deg, #111111, black );\n}\n\n\n\n"]}
