@@ -36,14 +36,16 @@ const useStyles = makeStyles((theme) => ({
   },
 
   seeProjects:{
-    background: `url(${silverFalls}) no-repeat center`,
-    backgroundSize: 'cover',
     width: '100%',
     height: '1000px',
-    marginTop: '35px',
-    paddingTop: '75px',
     marginBottom: '200px'
   },
+
+  seeProjectsGrid:{
+    background: `url(${silverFalls}) no-repeat center`,
+    backgroundSize: 'cover',
+  },
+
 
   projectsSection:{
     height: 'auto',
@@ -103,7 +105,7 @@ buttonStyles:{
     width: '120px',
     border: 'solid 2px rgb(228, 130, 74)',
     borderRadius: '50%',
-    backgroundColor: 'black',
+    backgroundColor: '#111111',
     color: 'rgb(228, 130, 74)',
     textTransform: 'none',
     fontFamily: 'roboto',
@@ -130,7 +132,7 @@ function Main() {
           <Grid item >
             <NavBar />
           </Grid >
-          <Grid item >
+          <Grid item className={classes.seeProjectsGrid}>
             <div className={classes.seeProjects}>
               <SeeProjects href="#Projects"/>
             </div>

@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
         width: '120px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
         fontFamily: 'roboto',

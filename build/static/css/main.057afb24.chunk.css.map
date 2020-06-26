@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css","App.css"],"names":[],"mappings":"AACA,KAGE,UAAW,CACX,eAEF,CCLA,eDCE,WAAY,CAGZ,qBCDF","file":"main.057afb24.chunk.css","sourcesContent":["\nhtml {\n\n  height: auto;\n  width: auto;\n  overflow: scroll;\n  background-color: black;\n}\n\n\n\n","\n\n.Projects {\n  background-color: rgba(0, 0, 0);\n  height: auto;\n}\n\n"]}
