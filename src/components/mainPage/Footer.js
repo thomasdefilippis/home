@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         boxShadow: "none",
-        backgroundColor: "#000000",
+        backgroundColor: "#111111",
         height: '70px',
         borderTop: '2px solid rgb(228, 130, 74)',
         width: '95%',

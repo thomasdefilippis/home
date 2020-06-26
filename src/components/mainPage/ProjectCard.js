@@ -13,7 +13,7 @@ import ModalImage from './ModalImage';
 const useStyles = (theme) =>({
   root: {
     maxWidth: '360px',
-    backgroundColor: 'black',
+    backgroundColor: '#111111',
     opacity: '0.9',
     border: 'solid 3px rgb(228, 130, 74)',
     height: 'auto',

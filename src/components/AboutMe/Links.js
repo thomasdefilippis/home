@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
         fontSize: '20px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
         width: '120px',
@@ -25,13 +25,13 @@ const useStyles = makeStyles(() => ({
         border: 'solid 1px rgb(228, 130, 74)',
         borderRadius: '50%',
         backgroundColor: 'rgb(228,130,74)',
-        color: 'black',
+        color: '#111111',
         textTransform: 'none',
         width: '120px',
         height: '120px',
         '&:hover': {
             border: 'solid 4px rgb(228, 130, 74)',
-            background: '#000000',
+            background: '#111111',
             color: 'rgb(228, 130, 74)'
         }
     },

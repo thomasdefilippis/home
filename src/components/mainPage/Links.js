@@ -8,15 +8,14 @@ const useStyles = makeStyles(() => ({
     buttonStyles:{
         fontSize: '25px',
         borderRadius: '50%',
-        backgroundColor: 'black',
+        backgroundColor: 'rgb(12,12,12)',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
-        fontFamily: 'robot',
+        fontFamily: 'robot0',
         width: '120px',
         height: '120px',
         '&:hover': {
             border: 'solid 4px rgb(228, 130, 74)',
-            background: '#000000'
         }
     },
 
@@ -26,7 +25,6 @@ const useStyles = makeStyles(() => ({
         borderLeft: '6px solid black',
         width: '5px',
         marginLeft: '98px',
-        transform: 'skewY(20deg)'
 
     },
 

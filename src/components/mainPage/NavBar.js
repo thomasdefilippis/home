@@ -19,8 +19,9 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         boxShadow: "none",
-        backgroundColor: "#000000",
+        backgroundImage: 'linear-gradient(0deg, black, #111111)',
         height: 'auto',
+        width: '100%'
     },
 
     titleIcon: {

@@ -14,16 +14,17 @@ const useStyles = (theme) => ({
         textAlign: 'center',
         marginBottom: '0px',
         marginTop: '10px'
+
     },
 
     buttonStyles:{
-        fontSize: '20px',
+        fontSize: '19px',
         height: '120px',
         width: '120px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
         fontFamily: 'roboto',
-        backgroundColor: 'black',
+        backgroundColor: 'rgb(9,9,9)',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
         marginBottom: '0px',

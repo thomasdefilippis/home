@@ -15,15 +15,26 @@ const useStyles = makeStyles((theme) => ({
       maxHeight: '100%'
   },
   dialog:{
-      textAlign: 'center'
+      textAlign: 'center',
   },
+
+  dialogContent: {
+    backgroundColor: '#dddddd'
+  },
+
+  actions:{
+    backgroundColor: '#dddddd'
+  },
+
   button:{
     color: 'black',
     background: 'rgb(228, 130, 74)',
+    height: '80px',
+    width: '90px',
     margin: '0 auto',
-    borderRadius: '2%',
+    borderRadius: '4%',
     marginTop: '2px',
-    marginBottom: '4x',
+    marginBottom: '50px',
     "&:hover": {
       background: '#567CAA'
     }
@@ -47,10 +58,10 @@ export default function ModalComponent(props) {
         onClose={props.onClick}
         aria-labelledby="max-width-dialog-title"
       >
-        <DialogContent className={classes.dialog}>
+        <DialogContent className={classes.dialogContent}>
           <img alt="gif that is supposed to load" src={props.gifUrl} className={classes.image} height="auto" width="auto"/>
         </DialogContent>
-        <DialogActions >
+        <DialogActions  className={classes.actions}>
           <Button onClick={props.onClick} className={classes.button}>
             Close
           </Button>

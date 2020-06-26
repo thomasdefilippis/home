@@ -4,7 +4,7 @@ html {
   height: auto;
   width: auto;
   overflow: scroll;
-  background-color: black;
+  background-image: linear-gradient(0deg, #111111, black );
 }
 
 

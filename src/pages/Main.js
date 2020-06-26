@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import NavBar from '../components/mainPage/NavBar';
 import SeeProjects from '../components/mainPage/SeeProjects';
 import {Grid, Button} from "@material-ui/core";
@@ -41,13 +40,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     width: '100%',
     height: '1000px',
-    marginTop: '5px',
-    paddingTop: '60px',
+    marginTop: '35px',
+    paddingTop: '75px',
     marginBottom: '200px'
   },
 
   projectsSection:{
-    height: 'auto'
+    height: 'auto',
+    backgroundColor: '#111111'
+  },
+
+  top:{
+    backgroundImage: 'linear-gradient(0deg,#111111, black)'
   },
 
   title:{
@@ -60,16 +64,16 @@ const useStyles = makeStyles((theme) => ({
   },
 
   App:{
-    height: 'auto'
+    height: 'auto',
   },
 
   codingChallenges:{
-    backgroundColor: 'black',
+    backgroundColor: '#111111',
     width: '100%',
     height: 'auto',
     textAlign: 'center',
     marginBottom: '75px',
-    marginTop: '10px'
+    marginTop: '0px'
   },
 
   header:{
@@ -134,10 +138,12 @@ function Main() {
         </Grid>
       </div>
       <div className={classes.projectsSection}>
-        <ScrollUp />
-        <header className={classes.title} >
-            <h1 className={classes.header}>Projects</h1>
-        </header>
+        <div className={classes.top}>
+          <ScrollUp />
+          <header className={classes.title} >
+              <h1 className={classes.header}>Projects</h1>
+          </header>
+        </div>
         <Grid container direction='row' className={classes.projects} >
           <Grid item className={classes.example} xs={1} sm={1} md={1} lg={2} xl={2}>
           </Grid>

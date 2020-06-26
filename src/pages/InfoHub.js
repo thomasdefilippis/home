@@ -3,7 +3,7 @@ import { makeStyles, Grid, Hidden, Button } from '@material-ui/core';
 import NavBar from '../components/AboutMe/NavBar';
 import SeeProjects from '../components/AboutMe/SeeProjects';
 import ProjectContent from '../components/mainPage/ProjectContent';
-import ScrollUp from '../components/mainPage/ScrollUp';
+import ScrollUp from '../components/AboutMe/ScrollUp';
 import Description from '../components/AboutMe/Description';
 import Footer from '../components/mainPage/Footer';
 import { motion } from 'framer-motion';
@@ -18,7 +18,7 @@ import { Link } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
     root:{
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         height: 'auto',
         width: 'auto'
 
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     navigation:{
         width: '100%',
         minHeight: '125vh',
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         marginBottom: '400px',
     },
 
@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: '10px',
       paddingBottom: '100px',
       marginTop: '40px',
+      backgroundColor: '#111111'
       
     },
     
@@ -61,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
     
     
     title:{
+        backgroundColor: '#111111',
         width: '100%',
         height: 'auto',
         borderBottom: 'solid 3px rgb(228, 130, 74)',
@@ -70,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     codingChallenges:{
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         width: '100%',
         height: 'auto',
         textAlign: 'center',
@@ -123,7 +125,7 @@ const InfoHub = (props) =>{
     const classes = useStyles();
     const { width } = props;
     return(
-        <div>
+        <div className={classes.root}>
             <div className={classes.navigation}>
                 <Grid container direction="column">
                 <Grid item >
@@ -157,8 +159,8 @@ const InfoHub = (props) =>{
                 </Grid>
                 
             </div>
-            <div className='Projects' id="projects">
-                <ScrollUp />
+            <div className={classes.projectSection} id="projects">
+                <ScrollUp/>
                 <header className={classes.title} >
                     <h1 className={classes.header}>Projects</h1>
                 </header>

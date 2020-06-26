@@ -38,7 +38,7 @@ import musiconGif from './musiconGif.gif';
     
 
     {
-        title: 'Grade Particpation App',
+        title: 'Grade Participation App',
         imageUrl: GradeParticipation,
         description: 'A React application that loops through 15 questions per student and collects the overall score, averaging it at the end. As I was previously a teacher. I created this app to speed up participation grades. ',
         gifUrl: gradeParticipation,

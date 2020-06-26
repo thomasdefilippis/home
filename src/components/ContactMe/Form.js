@@ -33,7 +33,7 @@ const useStyles = (theme) => ({
     },
 
     description: {
-        backgroundColor: 'black',
+        backgroundColor: '#111111',
         width: 'auto',
         height: 'auto',
         marginTop: '50px',
@@ -71,6 +71,7 @@ const useStyles = (theme) => ({
     },
 
     submit:{
+        color: "#111111",
         marginLeft: '30px',
         width: '150px',
         height: '40px',

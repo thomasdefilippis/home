@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '25px',
         border: 'solid 2px black',
         borderRadius: '50%',
-        backgroundColor: 'black',
+        backgroundColor: 'rgb(10,10,10)',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
         width: '120px',
@@ -27,14 +27,13 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'robot',
         '&:hover': {
             border: 'solid 4px rgb(228, 130, 74)',
-            background: '#000000'
         }
     },
 
 
     line:{
         height: '20px',
-        borderLeft: '6px solid black',
+        borderLeft: '6px solid ',
         width: '5px',
         marginLeft: '98px',
 
