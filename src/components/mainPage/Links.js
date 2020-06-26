@@ -6,11 +6,12 @@ import {Button} from '@material-ui/core';
 const useStyles = makeStyles(() => ({
 
     buttonStyles:{
-        fontSize: '20px',
+        fontSize: '25px',
         borderRadius: '50%',
         backgroundColor: 'black',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
+        fontFamily: 'robot',
         width: '120px',
         height: '120px',
         '&:hover': {

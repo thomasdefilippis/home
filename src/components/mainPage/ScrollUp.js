@@ -17,11 +17,12 @@ const useStyles = (theme) => ({
     },
 
     buttonStyles:{
-        fontSize: '18px',
+        fontSize: '20px',
         height: '120px',
         width: '120px',
         border: 'solid 2px rgb(228, 130, 74)',
         borderRadius: '50%',
+        fontFamily: 'roboto',
         backgroundColor: 'black',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',

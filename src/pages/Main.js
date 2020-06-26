@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: 'solid 3px rgb(228, 130, 74)',
       borderTop: 'solid 3px rgb(228, 130, 74)',
       marginTop: '20px',
-      textAlign: 'center'
+      textAlign: 'center',
   },
 
   App:{
@@ -102,6 +102,7 @@ buttonStyles:{
     backgroundColor: 'black',
     color: 'rgb(228, 130, 74)',
     textTransform: 'none',
+    fontFamily: 'roboto',
     marginBottom: '0px',
     '&:hover': {
         border: 'solid 4px rgb(228, 130, 74)',

@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '40px',
         marginTop: '10px',
         marginLeft: '0px',
-        marginRight: '10px'
+        marginRight: '10px',
+        fontFamily: 'roboto'
     },
 
     root: {

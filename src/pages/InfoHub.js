@@ -108,6 +108,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'black',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
+        fontFamily: 'roboto',
         marginBottom: '0px',
         '&:hover': {
             border: 'solid 4px rgb(228, 130, 74)',

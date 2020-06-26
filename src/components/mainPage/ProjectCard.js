@@ -19,7 +19,7 @@ const useStyles = (theme) =>({
     height: 'auto',
     width: 'auto',
     margin: '0 auto',
-    padding: '4px',
+    padding: '6px',
     '&:hover': {
         borderRadius: '3%',
         opacity: '1'
@@ -33,18 +33,18 @@ const useStyles = (theme) =>({
   typographyStyles:{
       color: '#567CAA',
       marginTop: '30px',
-      fontSize: '20px',
+      fontSize: '22px',
       textAlign: 'left',
       wordWrap: 'break-word',
-      fontFamily: 'Helvetica'
+      fontFamily: 'roboto'
   },
 
   title:{
     margin: '0 auto',
     textAlign: 'center',
     color: 'rgb(228, 130, 74)',
-    fontSize: '28px',
-    fontFamily: 'Helvetica'
+    fontSize: '30px',
+    fontFamily: 'roboto'
 
   },
 
@@ -60,9 +60,9 @@ const useStyles = (theme) =>({
 
   links:{
       color: "#567CAA",
-      fontSize: '16px',
+      fontSize: '18px',
       fontWeight: '500',
-      fontFamily: 'Helvetica',
+      fontFamily: 'roboto',
       "&:hover": {
           textDecoration: 'underline',
           color: 'rgb(228, 130, 74)'
@@ -81,8 +81,8 @@ const useStyles = (theme) =>({
     paddingBottom: '0px',
     textDecoration: 'none',
     color: '#567CAA',
-    fontSize: '16px',
-    fontFamily: 'Helvetica',
+    fontSize: '18px',
+    fontFamily: 'roboto',
     textTransform: 'uppercase',
     fontWeight: '500',
     '&:hover':{

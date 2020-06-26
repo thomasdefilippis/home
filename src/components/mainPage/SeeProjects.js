@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     buttonStyles:{
-        fontSize: '18px',
+        fontSize: '25px',
         border: 'solid 2px black',
         borderRadius: '50%',
         backgroundColor: 'black',
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'none',
         width: '120px',
         height: '120px',
+        fontFamily: 'robot',
         '&:hover': {
             border: 'solid 4px rgb(228, 130, 74)',
             background: '#000000'

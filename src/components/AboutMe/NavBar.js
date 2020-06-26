@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
         height: 'auto',
         margin: '0 auto',
         textDecoration: 'none',
+        fontFamily: 'roboto'
     },
 
     scrollLink:{
