@@ -23,7 +23,7 @@ import musiconGif from './musiconGif.gif';
     {
         title: 'Book-Finder App',
         imageUrl: BookFinder,
-        description: 'Developed with React and Material UI, this application fetches data from the google books API and extracts ten books from the returned json object. The application grabs the users text input for Author and/or Title and use them to manipulate the query parameters on the API url.',
+        description: "Developed with React and Material UI, this application fetches data from the google books API and extracts ten books from the returned json object. The application grabs the user's text input for Author and/or Title and uses them to manipulate the query parameters on the API url.",
         gifUrl: bookFinder,
         sourceLink: 'https://github.com/thomasdefilippis/Book-Finder-App'
     },
@@ -31,7 +31,7 @@ import musiconGif from './musiconGif.gif';
     {
         title: 'Chrome Calculator Extension',
         imageUrl: Calculator,
-        description: 'A calculater loaded as a web extension into the chrome browser. Developed in React, this app deals with the order of operations by sorting the given string into two arrays: a numbers array, and an operations array. After that, it loops through the arrays and determines which operations to perform first.',
+        description: 'A calculator loaded as a web extension into the chrome browser. Developed in React, this app deals with the order of operations by sorting the given string into two arrays: a numbers array, and an operations array. After that, it loops through the arrays and determines which operations to perform first.',
         gifUrl: calculator,
         sourceLink: 'https://github.com/thomasdefilippis/React-JS-Calculator'
     },
