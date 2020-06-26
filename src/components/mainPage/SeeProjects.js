@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '25px',
         border: 'solid 2px black',
         borderRadius: '50%',
-        backgroundColor: 'rgb(10,10,10)',
+        backgroundColor: 'rgb(9,9,9)',
         color: 'rgb(228, 130, 74)',
         textTransform: 'none',
         width: '120px',

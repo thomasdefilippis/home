@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         boxShadow: "none",
-        backgroundImage: 'linear-gradient(0deg, black, #111111)',
+        backgroundImage: 'linear-gradient(0deg, black, #111111, black)',
         height: 'auto',
         width: '100%'
     },

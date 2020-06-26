@@ -153,7 +153,7 @@ const InfoHub = (props) =>{
 
                             </motion.div>
                         </Grid>
-                        <Grid item xs= {1} md={1}></Grid>
+                        <Grid item xs= {1} md={1} lg={1} xl={1}></Grid>
                     </Grid>
                 </Grid>
                 </Grid>

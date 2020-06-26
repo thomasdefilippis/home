@@ -9,6 +9,7 @@ const useStyles = makeStyles(() => ({
         backgroundColor: '#111111',
         width: 'auto',
         height: 'auto',
+        marginRight: '10px',
         paddingLeft: '10px',
         color: 'rgb(228, 130, 74)',
         fontFamily: 'roboto',
