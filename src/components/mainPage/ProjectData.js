@@ -1,15 +1,15 @@
-import BorderRadius from './Border-Radius.PNG';
-import Calculator from './Calculator.jpg';
-import BookFinder from './Book-Finder.JPG';
-import GradeParticipation from './grade-participation.JPG';
-import ChoreBot from './Chore-Bot.JPG';
-import calculator from './calculator.gif';
-import bookFinder from './bookFinder.gif';
-import borderRadius from './border-radius-previewer.gif';
-import gradeParticipation from './gradeParticipation.gif';
-import choreBot from './choreBot.gif';
-import Musicon from './Musicon.jpg';
-import musiconGif from './musiconGif.gif';
+import BorderRadius from './jpgs/Border-Radius.PNG';
+import Calculator from './jpgs/Calculator.jpg';
+import BookFinder from './jpgs/Book-Finder.JPG';
+import GradeParticipation from './jpgs/grade-participation.JPG';
+import ChoreBot from './jpgs/Chore-Bot.JPG';
+import calculator from './gifs/calculator.gif';
+import bookFinder from './gifs/bookFinder.gif';
+import borderRadius from './gifs/border-radius-previewer.gif';
+import gradeParticipation from './gifs/gradeParticipation.gif';
+import choreBot from './gifs/choreBot.gif';
+import Musicon from './jpgs/Musicon.jpg';
+import musiconGif from './gifs/musiconGif.gif';
 
   export default  [
     {

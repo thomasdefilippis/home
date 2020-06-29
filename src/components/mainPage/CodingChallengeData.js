@@ -1,14 +1,14 @@
-import ECG from './ECG-Sequence.jpg';
-import ekg from './ekg.gif';
-import binarySwap from './binarySwap.jpg';
-import binarySwapGif from './binarySwap.gif';
-import scrabble from './scrabble.jpg';
-import WildTile from './WildTile.gif';
-import WiggledStrings from './WiggledStrings.jpg';
-import Swap from './Swap.jpg';
-import SwapXY from './SwapXY.gif';
-import Safecracker from './Safecracker.jpg';
-import safecrackerGif from './safecrackerGif.gif';
+import ECG from './jpgs/ECG-Sequence.jpg';
+import ekg from './gifs/ekg.gif';
+import binarySwap from './jpgs/binarySwap.jpg';
+import binarySwapGif from './gifs/binarySwap.gif';
+import scrabble from './jpgs/scrabble.jpg';
+import WildTile from './gifs/WildTile.gif';
+import WiggledStrings from './jpgs/WiggledStrings.jpg';
+import Swap from './jpgs/Swap.jpg';
+import SwapXY from './gifs/SwapXY.gif';
+import Safecracker from './jpgs/Safecracker.jpg';
+import safecrackerGif from './gifs/safecrackerGif.gif';
 
   export default  [
     {
