@@ -54,6 +54,7 @@ const useStyles = (theme) => ({
     message:{
         backgroundColor: 'white',
         width: '87%',
+        borderRadius: '1%'
     },
 
     paragraph:{
