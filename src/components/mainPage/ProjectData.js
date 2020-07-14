@@ -1,3 +1,4 @@
+import QuizApp from './jpgs/QuizApp.jpg';
 import BorderRadius from './jpgs/Border-Radius.PNG';
 import Calculator from './jpgs/Calculator.jpg';
 import BookFinder from './jpgs/Book-Finder.JPG';
@@ -5,6 +6,7 @@ import GradeParticipation from './jpgs/grade-participation.JPG';
 import ChoreBot from './jpgs/Chore-Bot.JPG';
 import calculator from './gifs/calculator.gif';
 import bookFinder from './gifs/bookFinder.gif';
+import QuizAppMoving from './gifs/QuizAppMoving.gif';
 import borderRadius from './gifs/border-radius-previewer.gif';
 import gradeParticipation from './gifs/gradeParticipation.gif';
 import choreBot from './gifs/choreBot.gif';
@@ -19,6 +21,15 @@ import musiconGif from './gifs/musiconGif.gif';
         gifUrl: choreBot,
         sourceLink: 'https://github.com/thomasdefilippis/Chore-Bot-Game'
     },
+    {
+        title: 'Quiz App',
+        imageUrl: QuizApp,
+        description: 'A full-stack PERN app running live on a digital ocean droplet, this program utilizes a PostgreSQl database accessed through api routes built in the Node Express framework. The digital ocean droplet uses Nginx to reverse proxy the client side produced with ReactJs. Access the live website below:',
+        edabit: "http://quizappthomasdefilippis.com/",
+        gifUrl: QuizAppMoving,
+        sourceLink: 'https://github.com/thomasdefilippis/quiz'
+    },
+    
 
     {
         title: 'Book-Finder App',
