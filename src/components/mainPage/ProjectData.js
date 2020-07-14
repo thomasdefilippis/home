@@ -24,7 +24,7 @@ import musiconGif from './gifs/musiconGif.gif';
     {
         title: 'Quiz App',
         imageUrl: QuizApp,
-        description: 'A full-stack PERN app running live on a digital ocean droplet, this program utilizes a PostgreSQl database accessed through api routes built in the Node Express framework. The digital ocean droplet uses Nginx to reverse proxy the client side produced with ReactJs. Access the live website below:',
+        description: 'A full-stack PERN app running live on a digital ocean droplet, this program accesses a PostgreSQl database through an API built in Node Express. Nginx reverse proxies the client side produced with ReactJs. Access the live website below:',
         edabit: "http://quizappthomasdefilippis.com/",
         gifUrl: QuizAppMoving,
         sourceLink: 'https://github.com/thomasdefilippis/quiz'
@@ -59,7 +59,7 @@ import musiconGif from './gifs/musiconGif.gif';
     {
         title: 'Border-Radius Previewer',
         imageUrl: BorderRadius,
-        description: 'Built in React, this app allows the user to manipulate the border radius of a div element to create a wide variety of shapes.',
+        description: 'Built in React, this app allows the user to manipulate the border radius of a div element to create a wide variety of shapes. The React Component uses the state to pass a border radius value to other child components as a prop in order to change the shape of the div.',
         gifUrl: borderRadius,
         sourceLink: 'https://github.com/thomasdefilippis/Border-Radius-Previewer'
     },
